@@ -244,6 +244,8 @@ pytest tests/ -v
 6. **Extensible** — Custom serialization, cost models, and task types supported
 7. **Testable** — Comprehensive test suite included
 
+Contributed by Yoonjae Hwang, Bhaskar Krishnamachari (USC), February 12, 2026
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
