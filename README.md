@@ -253,3 +253,7 @@ Contributed by Yoonjae Hwang, Bhaskar Krishnamachari (USC), February 12, 2026
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+## Acknowledgement
+
+This work was supported in part by ARL under Cooperative Agreement W911NF-17-2-0196.
