@@ -4,6 +4,8 @@
 
 A standard framework for authoring profiler-compatible DAG (Directed Acyclic Graph) tasks with automatic compute and communication profiling.
 
+**[Read the full specification (PDF)](dagprofiler-specification.pdf)**
+
 ## Overview
 
 `dagprofiler` is a standalone, pip-installable Python package that defines the **DAG Task Standard** — a contract between application developers, the profiler, and schedulers. It provides:
