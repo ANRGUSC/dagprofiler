@@ -1,5 +1,7 @@
 # dagprofiler
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18627959.svg)](https://doi.org/10.5281/zenodo.18627959)
+
 A standard framework for authoring profiler-compatible DAG (Directed Acyclic Graph) tasks with automatic compute and communication profiling.
 
 ## Overview
