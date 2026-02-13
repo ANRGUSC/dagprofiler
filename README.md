@@ -19,6 +19,8 @@ Any application developer who follows the DAG Task Standard can automatically ge
 
 ## Installation
 
+`dagprofiler` is available on [PyPI](https://pypi.org/project/dagprofiler/):
+
 ```bash
 pip install dagprofiler
 ```
