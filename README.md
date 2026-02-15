@@ -250,6 +250,21 @@ pytest tests/ -v
 
 Contributed by Yoonjae Hwang, Bhaskar Krishnamachari (USC), February 12, 2026
 
+## For Developers
+
+### Publishing to PyPI
+
+Publishing is automated via GitHub Actions using [Trusted Publishers (OIDC)](https://docs.pypi.org/trusted-publishers/). No API tokens are needed.
+
+To publish a new release:
+
+1. Bump the version in `pyproject.toml`
+2. Commit and push to `main`
+3. Create a [GitHub Release](https://github.com/ANRGUSC/dagprofiler/releases/new) with a tag matching the version (e.g., `v0.2.0`)
+4. The `publish.yml` workflow automatically builds and publishes to PyPI
+
+The workflow builds an sdist and wheel via `python -m build`, then uploads using PyPI's OIDC-based authentication — no secrets to configure.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
