@@ -75,6 +75,13 @@ class DAG:
             else:
                 src, dst, fields = edge
 
+            unknown = [node for node in (src, dst) if node not in tasks]
+            if unknown:
+                raise ValueError(
+                    f"Edge references unknown task(s): {sorted(unknown)}. "
+                    f"Known tasks: {sorted(tasks.keys())}"
+                )
+
             self.edges[src].append(dst)
             if fields:
                 self.edge_fields[(src, dst)] = fields
@@ -172,7 +179,7 @@ class DAG:
 
             for field in fields:
                 if field in upstream_out:
-                    routed[field] = Task.serialize(upstream_out[field])
+                    routed[field] = task.serialize(upstream_out[field])
 
         return routed
 
